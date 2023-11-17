@@ -1,46 +1,88 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="バッテリー"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
-
-メロスは激怒した。[l][r]
-
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
-
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
-[s]
-
-*tag_sleep
+「バッテリー」[l][r]
+このゲームはマルチエンディングゲームです[r]
+４つのエンディングすべてクリアを目指そう！[l]
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+最近グラフィックにこだわったスマホゲームハマっている。[l][r]
+こういうゲームは充電の減りが早いんだよなあ…[l][r]
+充電もあと10%しかないし…[l][r]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
 
-【 BAD END 】[l][cm]
+[link target=*tag_charge] →充電しながらゲーム [endlink][r]
+[link target=*tag_endure] →充電せずゲーム [endlink][r]
+[s]
+
+*tag_charge
+
+[cm]
+
+あっという間にスマホが発熱して、バッテリーの寿命が縮んでしまった！[l][r]
+バッテリーの最大容量が50%になってしまった！[l][r]
+
+[link target=*tag_restore] →バッテリーを交換する [endlink][r]
+[link target=*tag_newphone] →スマホを新しくする [endlink][r]
+[s]
+
+*tag_restore
+
+[cm]
+
+１万円をかけてバッテリーを交換した！[l][r]
+今までの使い勝手のまま、長くゲームができるようになった！[l][r]
+
+【 END１ 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
-
-[bg storage=run.jpg time=500]
+*tag_newphone
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
-【 GOOD END 】[l][cm]
+最新のスマホを購入した！[l][r]
+なんだか前よりも動作が重くなる瞬間があるけど、バッテリーの寿命も長いし許容範囲かな[l][r]
+
+【 END２ 】[l][cm]
+
+[jump target=*start]
+
+*tag_endure
+
+[cm]
+バッテリーを守ることには成功したけど、10分くらいしかプレイできなかった…[l][r]
+早く続きがやりたいのに、USB-A端子だと充電が遅くてイライラする…[r]
+
+[link target=*tag_newcode] →USB-C端子の充電器を購入する [endlink][r]
+[link target=*tag_separate] →気長に待ってお金を節約する [endlink][r]
+[s]
+
+*tag_newcode
+
+[cm]
+
+充電が早く終わったのでゲームの続きができた！[l][r]
+翌日、10分で充電が終了するUSB-V端子の充電器が発表された！[l][r]
+もう少し待っていればよかった…[l][r]
+
+【 END３ 】[l][cm]
+
+[jump target=*start]
+
+*tag_separate
+
+[cm]
+
+テレビを見たりして気ままに待つことにした。[l][r]
+すると、CMで未来の充電端子USB-Vの存在を知った！[l][r]
+USB-Cよりも早い充電器！？早速買いに行こう！[l][r]
+
+【 END４ 】[l][cm]
 
 [jump target=*start]
